@@ -5,7 +5,7 @@
 # It is not recommended for the whole loop (as done here -- this is for the demo) but rather for
 # the det-pose-sam-pose studied in Tab. 4.
 detector:
-  det_config: 'mmpose/configs/mmdet/rtmdet/rtmdet-ins_l_8xb32-300e_coco.py'
+  det_config: 'mmpose_bboxMasPose/configs/mmdet/rtmdet/rtmdet-ins_l_8xb32-300e_coco.py'
   det_checkpoint: 'https://huggingface.co/vrg-prague/BBoxMaskPose/resolve/main/rtmdet-ins-l-mask.pth'
 
   # Detectors D and D' could be different. 
@@ -13,7 +13,7 @@ detector:
   det_prime_checkpoint: null
   
 pose_estimator:
-  pose_config: 'mmpose/configs/MaskPose/ViTb-multi_mask.py'
+  pose_config: 'mmpose_bboxMasPose/configs/MaskPose/ViTb-multi_mask.py'
   pose_checkpoint: 'https://huggingface.co/vrg-prague/BBoxMaskPose/resolve/main/MaskPose-b.pth'
   
 sam2:

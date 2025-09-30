@@ -3,7 +3,7 @@
 
 # This configuration is good for the BMP loop as was used for most of the experiments.
 detector:
-  det_config: 'mmpose/configs/mmdet/rtmdet/rtmdet-ins_l_8xb32-300e_coco.py'
+  det_config: 'mmpose_bboxMasPose/configs/mmdet/rtmdet/rtmdet-ins_l_8xb32-300e_coco.py'
   det_checkpoint: 'https://huggingface.co/vrg-prague/BBoxMaskPose/resolve/main/rtmdet-ins-l-mask.pth'
 
   # Detectors D and D' could be different. 
@@ -11,7 +11,7 @@ detector:
   det_prime_checkpoint: null
   
 pose_estimator:
-  pose_config: 'mmpose/configs/MaskPose/ViTb-multi_mask.py'
+  pose_config: 'mmpose_bboxMasPose/configs/MaskPose/ViTb-multi_mask.py'
   pose_checkpoint: 'https://huggingface.co/vrg-prague/BBoxMaskPose/resolve/main/MaskPose-b.pth'
   
 sam2:

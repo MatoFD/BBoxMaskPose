@@ -9,9 +9,9 @@ import numpy as np
 from mmdet.apis import inference_detector
 from mmengine.structures import InstanceData
 
-from mmpose.apis import inference_topdown
-from mmpose.evaluation.functional import nms
-from mmpose.structures import merge_data_samples
+from mmpose_bboxMasPose.apis import inference_topdown
+from mmpose_bboxMasPose.evaluation.functional import nms
+from mmpose_bboxMasPose.structures import merge_data_samples
 
 
 def run_MMDetector(detector, image, det_cat_id: int = 0, bbox_thr: float = 0.3, nms_thr: float = 0.3) -> InstanceData:
