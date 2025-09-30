@@ -22,8 +22,8 @@ from mmengine.structures import InstanceData
 from sam2_utils import prepare_model as prepare_sam2_model
 from sam2_utils import process_image_with_SAM
 
-from mmpose_bboxMasPose.apis import init_model as init_pose_estimator
-from mmpose_bboxMasPose.utils import adapt_mmdet_pipeline
+from mmpose.apis import init_model as init_pose_estimator
+from mmpose.utils import adapt_mmdet_pipeline
 
 # Default thresholds
 DEFAULT_DET_CAT_ID: int = 0  # "person"

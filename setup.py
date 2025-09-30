@@ -148,7 +148,7 @@ def add_mim_extension():
         'tools', 'configs', 'demo', 'model-index.yml', 'dataset-index.yml'
     ]
     repo_path = osp.dirname(__file__)
-    mim_path = osp.join(repo_path, 'mmpose_bboxMasPose', '.mim')
+    mim_path = osp.join(repo_path, 'mmpose', '.mim')
     os.makedirs(mim_path, exist_ok=True)
 
     for filename in filenames:
@@ -188,7 +188,7 @@ if __name__ == '__main__':
         long_description_content_type='text/markdown',
         packages=find_packages(exclude=('configs', 'tools', 'demo')),
         include_package_data=True,
-        package_data={'mmpose_bboxMasPose.ops': ['*/*.so'], 'sam2': ['*.so'], 'sam2.*': ['*.so']},
+        package_data={'mmpose.ops': ['*/*.so'], 'sam2': ['*.so'], 'sam2.*': ['*.so']},
         classifiers=[
             'Development Status :: 4 - Beta',
             'Operating System :: OS Independent',
